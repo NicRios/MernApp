@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CreateTodo from './components/create-todo.component.js'
 import EditTodo from './components/edit-todo.component.js'
 import TodosList from './components/todos-list.component.js'
-import FormatPhone from '/components/format-e164.component.js'
+import FormatPhone from './components/format-e164.component.js'
 
 import logo from "./logo.svg";
 
