@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CreateTodo from './components/create-todo.component.js'
 import EditTodo from './components/edit-todo.component.js'
 import TodosList from './components/todos-list.component.js'
+import FormatPhone from '/components/format-e164.component.js'
 
 import logo from "./logo.svg";
 
@@ -26,6 +27,9 @@ class App extends Component {
               <li className = "navbar-item">
                 <Link to= "/create" className = "nav-link"> Create Todo </Link>
               </li>
+              <li className = "navbar-item">
+                <Link to= "/codes" className = "nav-link"> Format Phone Numbers </Link>
+              </li>
             </ul>
           </div>
           </nav>
@@ -33,6 +37,7 @@ class App extends Component {
           <Route path="/" exact component={TodosList} />
           <Route path="/edit/:id" component={EditTodo} />
           <Route path="/create" component={CreateTodo} />
+          <Route path="/codes" component={FormatPhone} />
         </div>
       </Router>
     );

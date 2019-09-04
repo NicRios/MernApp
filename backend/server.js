@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const connectionString = 'mongodb+srv://dbUser:nicolasrios@cluster0-lrec5.gcp.mongodb.net/test?retryWrites=true&w=majority';
 const todoRoutes = express.Router();
 
